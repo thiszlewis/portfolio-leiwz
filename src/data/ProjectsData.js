@@ -1,10 +1,10 @@
 const ProjectsData = [
   {
-    title: "forbes400 Api",
-    Edited: "January 2017",
-    image: "./img/forbes400.png",
+    title: "Getaway from G.T.A",
+    Edited: "JULY 2002",
+    image: "./img/Project-01.png",
     description: `JSON Api Of The Forbes 400 Richest People List "Version 0.0.0"`,
-    url: "https://forbes400.herokuapp.com"
+    url: "https://github.com/TeamGTA/GetawayfromGTA"
   },
   {
     title: "DataPlayGround",

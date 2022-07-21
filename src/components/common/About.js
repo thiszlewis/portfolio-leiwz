@@ -16,31 +16,30 @@ class About extends Component {
           <div className="my-auto">
             <br />
             <h1 className="mb-0">
-              Jesse {seperate}
-              <span className="text-primary">Okeya</span>
+            Lewis {seperate}
+              <span className="text-primary">Iwhere</span>
             </h1>
             <h2 className="proffession">
               {$(window).width() <= 375 ? (
                 <div>
-                  Software
+                  frontend 
                   <div className="developer">Developer</div>
                 </div>
               ) : (
-                "Software Developer"
+                "frontend Developer"
               )}
             </h2>
             <div className="subheading mb-5">
-              <a className="map-link" onClick={this.showMap}>
-                933 Greenbriar Avenue
+              <a className="map-link">
+                152 Holbourne avenue
               </a>
               <span className="space-out">·</span>
-              <a className="map-link" onClick={this.showMap}>
-                Ottawa, CA K2C 0J8
+              <a className="map-link" >
+                TORONTO, CA   M4C 2R6
               </a>
-              <span className="space-out">·</span>
-              <a href="tel:6134135540">(613) 413-5540</a>
-              <span className="space-out">·</span>
-              <a href="mailto:jesseokeya@gmail.com">Jesseokeya@gmail.com</a>
+              <span className="space-out"></span>
+              <span className="space-out">.</span>
+              <a href="mailto:thiszlewis@gmail.com">thiszlewis@gmail.com</a>
             </div>
             <p className="mb-5">
               Passionate Software Engineer with years of verifiable success in
@@ -66,7 +65,7 @@ class About extends Component {
                 >
                   <span className="fa-stack fa-lg">
                     <i className="fa fa-circle fa-stack-2x"></i>
-                    <i className="fa fa-rss fa-stack-1x fa-inverse"></i>
+                    <i className="fa fa-file-lines"></i>
                   </span>
                 </a>
               </li>
@@ -84,7 +83,7 @@ class About extends Component {
               </li>
               <li className="list-inline-item">
                 <a
-                  href="https://github.com/jesseokeya"
+                  href="https://github.com/thiszlewis/React-portfolio"
                   target="_blank"
                   rel="noopener noreferrer"
                 >

@@ -43,12 +43,7 @@ class App extends Component {
         <Nav />
         <div className="container-fluid p-0 color-bg">
           <About />
-          <Experience />
-          <Education />
-          <Skills />
           <Projects />
-          <Awards />
-          <Github />
           <Contact />
         </div>
       </div>

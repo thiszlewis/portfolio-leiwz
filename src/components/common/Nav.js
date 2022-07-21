@@ -58,77 +58,16 @@ class Nav extends Component {
                 About
               </a>
             </li>
-            <li className="nav-item">
-              <a
-                onClick={this.closeNav}
-                className="nav-link js-scroll-trigger"
-                href="#experience"
-              >
-                Experience
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                onClick={this.closeNav}
-                className="nav-link js-scroll-trigger"
-                href="#education"
-              >
-                Education
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                onClick={this.closeNav}
-                className="nav-link js-scroll-trigger"
-                href="#skills"
-              >
-                Skills
-              </a>
-            </li>
+         
             <li className="nav-item">
               <a
                 onClick={this.closeNav}
                 className="nav-link js-scroll-trigger"
                 href="#projects"
               >
+              
+              
                 Projects
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                onClick={this.closeNav}
-                className="nav-link js-scroll-trigger"
-                href="#interests"
-              >
-                Interests
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                onClick={this.closeNav}
-                className="nav-link js-scroll-trigger"
-                href="#awards"
-              >
-                Awards
-              </a>
-            </li>
-            <div className="hr-line"></div>
-            <li className="nav-item">
-              <a
-                onClick={this.closeNav}
-                className="nav-link js-scroll-trigger"
-                href="https://medium.com/@jesseokeya"
-              >
-                Blog
-              </a>
-            </li>
-            <li className="nav-item">
-              <a
-                onClick={this.closeNav}
-                className="nav-link js-scroll-trigger"
-                href="#github"
-              >
-                Github
               </a>
             </li>
             <li className="nav-item">

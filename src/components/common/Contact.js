@@ -55,60 +55,14 @@ class Contact extends Component {
   }
 
   handleSubmit() {
-    const form = this.state;
-    if (this.formIsValid()) {
-      $('.form-control').removeClass('is-valid');
-      $('#firstName').val('');
-      $('#lastName').val('');
-      $('#email').val('');
-      $('#message').val('');
-      ReactGA.ga('send', 'pageview', '/formValid');
+    // const form = this.state;
+
       const message = this.successMessage('Success!!', 'Form Submitted');
       $('#alertMessage').append(message);
       setTimeout(() => {
         $('#alertMessage').empty();
-        this.setState({firstName: ''});
-        this.setState({lastName: ''});
-        this.setState({email: ''});
-        this.setState({message: ''});
       }, 4000);
-      const url = 'https://code-front.herokuapp.com/api/contact';
-      const editForm = {
-        name: `${form.firstName} ${form.lastName}`,
-        email: form.email,
-        message: form.message
-      }
-      $.post(url, editForm).done((data) => {
-        console.log('Form Submitted');
-        ReactGA.ga('send', 'pageview', '/formSubmit');
-      })
-    } else {
-      $('.form-control').removeClass('is-valid');
-      for (let i in $('input')) {
-        const input = $('input')[i];
-        if (input.value === '') {
-          $(`#${input.id}`).addClass('is-invalid');
-          $(`#${input.id}`).removeClass('is-valid');
-        } else {
-          $(`#${input.id}`).addClass('is-valid');
-          $(`#${input.id}`).removeClass('is-invalid');
-        }
-      }
-      const textarea = $('textarea')[0];
-      if ($('textarea')[0].value === '') {
-        $(`#${textarea.id}`).addClass('is-invalid');
-        $(`#${textarea.id}`).removeClass('is-valid');
-      } else {
-        $(`#${textarea.id}`).addClass('is-valid');
-        $(`#${textarea.id}`).removeClass('is-invalid');
-      }
-      ReactGA.ga('send', 'pageview', '/formInValid');
-      const message = this.errorMessage('Error!', 'Empty Form Field(s)');
-      $('#alertMessage').append(message);
-      setTimeout(() => {
-        $('#alertMessage').empty();
-      }, 4000);
-    }
+    // }
   }
 
   render() {
